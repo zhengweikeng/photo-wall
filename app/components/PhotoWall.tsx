@@ -23,7 +23,7 @@ const PhotoWall = async () => {
     }
 
     return (
-        <div className='mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='mx-auto px-4 sm:px-6 lg:px-8 m-2'>
             <div className="flex flex-row flex-grow flex-wrap justify-center gap-1">
                 {photos.map((photoName: string, index: number) => (
                     <PhotoCard key={index} url={process.env.photoWallBaseURL + "/" + photoName} />

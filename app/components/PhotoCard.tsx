@@ -11,14 +11,11 @@ const PhotoCard: React.FC<PhotoCardProps> = ({ url }) => {
 
     return (
         <div className='photo-card rounded-lg sm:max-w-max md:max-w-xs lg:max-w-xs m-1 hover:scale-110 transition-all duration-500 ease-in-out'>
-            <Link href={`/photo/${photoName}`} title={photoName}>
+            <Link href={`${photoName}`} title={photoName}>
                 <Image
                     src={url}
                     alt={photoName}
-                    width={300}
-                    height={300}
-                    layout="responsive"
-                    objectFit="cover"
+                    fill
                 />
             </Link>
         </div>

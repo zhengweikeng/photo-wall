@@ -27,6 +27,9 @@ export async function generateStaticParams() {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${process.env.photoWallAPIKey}`
             },
+            next: {
+                revalidate: 3600
+            }
         })
     const photoNames = await res.json()
 
