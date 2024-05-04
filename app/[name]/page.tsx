@@ -4,7 +4,7 @@ const Photo = async ({ params }: { params: { name: string } }) => {
     const photoURL = process.env.photoWallBaseURL + '/' + params.name
 
     return (
-        <div className="flex flex-col max-w-screen-xl px-4 md:px-60 lg:px-60">
+        <div className="flex flex-col max-w-screen-xl px-4 ">
             <div className="p-4">
                 <Image
                     src={photoURL}

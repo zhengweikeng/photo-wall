@@ -10,12 +10,14 @@ const PhotoCard: React.FC<PhotoCardProps> = ({ url }) => {
     const photoName = photoURL.pathname
 
     return (
-        <div className='photo-card rounded-lg sm:max-w-max md:max-w-xs lg:max-w-xs m-1 hover:scale-110 transition-all duration-500 ease-in-out'>
+        <div className='photo-card rounded-lg sm:max-w-max m-1'>
             <Link href={`${photoName}`} title={photoName}>
                 <Image
                     src={url}
                     alt={photoName}
-                    fill
+                    width={400}
+                    height={300}
+                    className='rounded-lg shadow-md'
                 />
             </Link>
         </div>

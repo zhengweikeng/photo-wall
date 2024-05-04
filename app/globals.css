@@ -17,9 +17,7 @@
 }
 
 .photo-card {
-  position: relative;
-  width: 300px;
-  height: 280px;
+  height: 300px;
   /* 统一高度 */
   overflow: hidden;
   /* 隐藏超出部分 */
